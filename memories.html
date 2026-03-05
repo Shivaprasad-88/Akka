@@ -1,43 +1,114 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> Memories 💞</title>
-    <link rel="stylesheet" href="style.css">
+<title>Memories 💞</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.heart-gallery{
+display:grid;
+grid-template-columns: repeat(7,80px);
+grid-gap:8px;
+justify-content:center;
+margin-top:20px;
+}
+
+.photo{
+width:80px;
+height:80px;
+object-fit:cover;
+border-radius:10px;
+}
+
+/* Heart positions */
+
+.p1{grid-column:2;grid-row:1;}
+.p2{grid-column:3;grid-row:1;}
+.p3{grid-column:5;grid-row:1;}
+.p4{grid-column:6;grid-row:1;}
+
+.p5{grid-column:1;grid-row:2;}
+.p6{grid-column:2;grid-row:2;}
+.p7{grid-column:3;grid-row:2;}
+.p8{grid-column:4;grid-row:2;}
+.p9{grid-column:5;grid-row:2;}
+.p10{grid-column:6;grid-row:2;}
+.p11{grid-column:7;grid-row:2;}
+
+.p12{grid-column:2;grid-row:3;}
+.p13{grid-column:3;grid-row:3;}
+.p14{grid-column:4;grid-row:3;}
+.p15{grid-column:5;grid-row:3;}
+.p16{grid-column:6;grid-row:3;}
+
+.p17{grid-column:3;grid-row:4;}
+.p18{grid-column:4;grid-row:4;}
+.p19{grid-column:5;grid-row:4;}
+
+.p20{grid-column:3;grid-row:5;}
+.p21{grid-column:4;grid-row:5;}
+.p22{grid-column:5;grid-row:5;}
+
+.p23{grid-column:4;grid-row:6;}
+.p24{grid-column:4;grid-row:7;}
+.p25{grid-column:4;grid-row:8;}
+
+</style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>Beautiful Memories Together 🥰</h1>
-        <p>Every moment with you is special 💕</p>
 
-        <img src="images/Photo1.jpg" class="photo">
+<div class="container">
+<h1>Beautiful Memories Together 🥰</h1>
+<p>Every moment with you is special 💕</p>
 
-<img src="images/Photo2.jpg" class="photo">
-<img src="images/Photo3.jpg" class="photo">
+<div class="heart-gallery">
 
-<img src="images/Photo4.jpg" class="photo">
-<img src="images/Photo6.jpg" class="photo">
-        <img src="images/Photo7.jpg" class="photo">
-<img src="images/Photo8.jpg" class="photo">
-
-<img src="images/Photo9.jpg" class="photo">
-<img src="images/Photo10.jpg" class="photo">
-      <img src="images/Photo11.jpg" class="photo">
-<img src="images/Photo12.jpg" class="photo">
-
-  
+<img src="images/Photo1.jpg" class="photo p1">
+<img src="images/Photo2.jpg" class="photo p2">
+<img src="images/Photo3.jpg" class="photo p3">
+<img src="images/Photo4.jpg" class="photo p4">
 
 
+<img src="images/Photo6.jpg" class="photo p6">
+<img src="images/Photo7.jpg" class="photo p7">
+<img src="images/Photo8.jpg" class="photo p8">
+<img src="images/Photo9.jpg" class="photo p9">
+<img src="images/Photo10.jpg" class="photo p10">
+<img src="images/Photo11.jpg" class="photo p11">
 
+<img src="images/Photo12.jpg" class="photo p12">
+<img src="images/Photo13.jpg" class="photo p13">
+<img src="images/Photo14.jpg" class="photo p14">
+<img src="images/Photo15.jpg" class="photo p15">
+<img src="images/Photo16.jpg" class="photo p16">
 
-        
+<img src="images/Photo17.jpg" class="photo p17">
+<img src="images/Photo18.jpg" class="photo p18">
+<img src="images/Photo19.jpg" class="photo p19">
 
-        <a href="message.html" class="btn">Read My Message 💌</a>
-    </div>
-</body>
+<img src="images/Photo20.jpg" class="photo p20">
+<img src="images/Photo21.jpg" class="photo p21">
+<img src="images/Photo22.jpg" class="photo p22">
+
+<img src="images/Photo23.jpg" class="photo p23">
+<img src="images/Photo24.jpg" class="photo p24">
+<img src="images/Photo25.jpg" class="photo p25">
+
+</div>
+
+<br>
+<a href="message.html" class="btn">Read My Message 💌</a>
+
+</div>
+
 <script>
-var password = prompt("Enter the secret code to see  Memories 💖");
+var password = prompt("Enter the secret code to see Memories 💖");
 if(password !== "bhuvana") {
-    document.body.innerHTML = "<h2 style='text-align:center;margin-top:50px;'>Access Denied ❌</h2>";
+document.body.innerHTML = "<h2 style='text-align:center;margin-top:50px;'>Access Denied ❌</h2>";
 }
 </script>
+
+</body>
 </html>
